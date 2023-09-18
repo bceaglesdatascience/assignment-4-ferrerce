@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test4",
+      "setup": "",
+      "run": "python purchases.py",
+      "input": "4\r\n.5\r\nAl\r\n1\r\nSue\r\n2\r\nAl\r\n3\r\nSue\r\n4",
+      "output": "Number of purchases: Sales tax: Customer: Cost: Customer: Cost: Customer: Cost: Customer: Cost: {'Al\\r': 6.0, 'Sue\\r': 9.0}",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
