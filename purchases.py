@@ -23,7 +23,11 @@ customers = []
 costs = []
 for i in range(0,purchases):
     customers.append(input("Customer: "))
-    costs.append(float(input("Cost: ")))
+    try:
+        costs.append(float(input("Cost: ")))
+    except:
+        print("Must input a number!")
+        sys.exit()
 costs = add_tax(costs, tax)
 
 result = {}
