@@ -12,12 +12,19 @@ try:
 except:
     print("Number of purchases must be a whole number!")
     sys.exit()
+if purchases < 0:
+    print(f"Did you mean {purchases * -1}?")
+    sys.exit()
+elif purchases == 0:
+    print("Why are you even here if you haven't bought anything?")
+    sys.exit()
 try:
     tax = float(input("Salex tax: "))
 except:
     print("Tax must be a number!")
     sys.exit()
-
+if tax < 0:
+        print("We're in a Capitalist society, but I'll calculate it anyways :)")
 #Creating the list 
 customers = []
 costs = []
