@@ -19,7 +19,7 @@ elif purchases == 0:
     print("Why are you even here if you haven't bought anything?")
     sys.exit()
 try:
-    tax = float(input("Salex tax: "))
+    tax = float(input("Sales tax: "))
 except:
     print("Tax must be a number!")
     sys.exit()
